@@ -8,7 +8,7 @@ plugins {
 //    noAutoBump = properties.getOrDefault("semver.noAutoBump", "false").toString().toBoolean()
 //}
 semver {
-    gitDir.set( rootDir.parentFile.resolve(".git"))
+//    gitDir.set( rootDir.parentFile.resolve(".git"))
 }
 group = "es.ibermutua.telefonia"
 //version = project.ext.properties.getOrDefault("tag", "0.0.1") as String
