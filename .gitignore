@@ -1,0 +1,14 @@
+/build/
+**/build/
+/cdr-processor/build/
+/.idea/
+**/.idea/
+/.gradle/
+**/.gradle/
+/**/logs/
+/running.flag
+/.kotlin/
+/cdr-processor/src/test/resources/cdrs_micro_differents.csv
+/notebooks/output/
+/notebooks/etc/*.xlsx
+/notebooks/output/*.xlsx
