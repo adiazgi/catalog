@@ -1,6 +1,10 @@
+import com.javiersc.semver.project.gradle.plugin.SemverExtension
+import com.javiersc.semver.project.gradle.plugin.tasks.PrintSemverTask
+
 plugins {
     `version-catalog`
     `maven-publish`
+    `ivy-publish`
     alias( libs.plugins.caupain)
     alias(libs.plugins.semver0)
 }
@@ -12,13 +16,17 @@ semver {
 }
 group = "es.ibermutua.telefonia"
 //version = project.ext.properties.getOrDefault("tag", "0.0.1") as String
-version = project.properties.getOrDefault("tag", "0.0.1") as String
+println("***version: ${project.version}")
+val tag = project.properties.getOrDefault("tag", "") as String
+if( tag.isNotEmpty()) version = tag
+println("***version: ${project.version}")
 
 catalog {
     versionCatalog {
         from(files("gradle/libs.versions.toml"))
     }
 }
+
 
 // This configures the maven-publish plugin
 publishing {
@@ -27,6 +35,17 @@ publishing {
             groupId = project.group as String
             artifactId = project.name
             version = project.version.toString()
+            from(components["versionCatalog"])
+        }
+
+        create<IvyPublication>("ivy") {
+            organisation = "es.ibermutua.telefonia"
+            module = project.name
+            revision = project.version.toString()
+            descriptor.status = "milestone"
+            descriptor.branch = "production"
+//            descriptor.extraInfo( "http://my.namespace", "myElement", "Some value")
+
             from(components["versionCatalog"])
         }
     }
@@ -44,5 +63,22 @@ publishing {
             url = uri(urlUploadRepositoryReleases)
             isAllowInsecureProtocol = true
         }
+
+        ivy {
+            // change to point to your repo, e.g. http://my.org/repo
+//            url = uri(layout.buildDirectory.dir("repo"))
+//            url = uri("c:/var/ivy-repo")
+            println( File.listRoots().joinToString(","))
+            val uri = uri("${File.listRoots()[0]}var/ivy-repo")
+            println( "Ivy repo = ${uri.path}")
+//            uri.mkdir()
+            url = uri//.toURI()
+        }
     }
 }
+
+//tasks.create( "x") {
+//    dependsOn("printSemver")
+//    val input = tasks.getByName<PrintSemverTask>( "printSemver").version.get()
+//    println( input)
+//}
