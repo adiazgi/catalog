@@ -38,6 +38,15 @@ publishing {
             from(components["versionCatalog"])
         }
 
+//        create<MavenPublication>("my-local-maven") {
+//            groupId = project.group as String
+//            artifactId = project.name
+//            version = project.version.toString()
+//
+//
+//            from(components["versionCatalog"])
+//        }
+
         create<IvyPublication>("ivy") {
             organisation = "es.ibermutua.telefonia"
             module = project.name
@@ -63,6 +72,10 @@ publishing {
             url = uri(urlUploadRepositoryReleases)
             isAllowInsecureProtocol = true
         }
+
+//        maven("my-local-maven") {
+//            url = uri("${File.listRoots()[0]}var/maven-repo")
+//        }
 
         ivy {
             // change to point to your repo, e.g. http://my.org/repo

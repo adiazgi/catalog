@@ -7,23 +7,26 @@ kotlin = "2.3.20-Beta1" # 2.3.0-Beta2" #""2.1.21"
 #ksp = "1.8.22-1.0.11"
 ksp = "2.3.4" #2.2.21-RC-2.0.4" # "2.1.21-2.0.1" #""2.1.20-1.0.32" #"2.0.21-1.0.26" #"1.9.23-1.0.20"
 #ksp = "2.0.0-RC2-1.0.20"
-compose-multiplatform = "1.11.0-alpha01" # "1.10.0-beta01" #"1.6.3"
-hot-reload = "1.1.0-alpha+182" # "1.0.0-rc01+169" # "1.0.0-beta04" #"1.0.0-alpha11"
 #compose = "1.4.3"
 #"1.6.0" #"1.5.12"
 serialization = "1.10.0-RC" #"1.9.0"
+datetime = "0.7.1-0.6.x-compat" #"0.6.2"
 
-#kotlin = "1.9.23"
-#ksp = "1.9.23-1.0.19"
-#compose = "1.6.0" #"1.5.12"
+compose-multiplatform = "1.11.0-alpha01" # "1.10.0-beta01" #"1.6.3"
+compose-base = "1.10.0" # "1.9.0" # 1.9.0-beta03" #1.8.0" # ""1.8.0-beta01" # "1.8.0-rc01" # "1.7.4" #"1.6.3"
+androidx-lifecycle = "2.10.0-alpha07" # "2.9.4" # "2.9.2" # "2.8.4" # "2.8.0-rc03"
+androidx-navigation = "2.9.1" # "2.9.0-alpha17" # Ok "2.8.0-alpha12" # KO "2.9.0-alpha15" # Ok "2.8.0-alpha12" # OK "2.8.0-alpha10" # OK "2.8.0-alpha08" # OK "2.7.0-alpha07" #"2.7.0-alpha06"
+compose-material3-adaptive-navigation-suite = "1.9.0"
+material3 = "1.11.0-alpha01" #"1.9.0-beta06"
+hot-reload = "1.1.0-alpha+186" # "1.0.0-rc01+169" # "1.0.0-beta04" #"1.0.0-alpha11"
 
-#kotlin = "1.9.22"
-#ksp = "1.9.22-1.0.16"
-#compose = "1.5.12" #"1.6.0" #"1.5.12"
+koog = "0.5.4" #"0.5.2.1.adg1" #"0.5.1"
+mcp = "0.8.1"
 
-#kotlin = "1.9.21"
-#ksp = "1.9.21-1.0.15"
-#compose = "1.5.11"
+# #############################################################
+snappy = "1.1.10.8"
+avro= "2.8.0"
+
 
 jackson = "2.20.1" # "2.18.0"
 #"2.16.1"
@@ -35,20 +38,22 @@ komapper = "3.1.0" #"1.17.0"
 #"1.14.1" #"1.16.1"
 #ktor="2.3.8" #9"
 ktor= "3.3.3" # "3.0.3" #3.0.1-eap-75" #""3.0.3" #"3.0.1" #"2.3.10"
+netty = "2.0.74.Final"
+
 detekt = "1.23.8"
 exposed = "0.46.0"
 jacksonDataformat ="2.16.1"
 
-postgresql = "42.7.8"
+postgresql = "42.7.9"
 statelyIso = "2.1.0"
 
-koin = "4.2.0-beta2" # "4.0.1" #"4.0.0"
-koinCompose = "4.2.0-beta2" # "1.2.0-Beta4"
-koin-annotations = "2.3.2-Beta1" #"2.1.0" #"2.0.0"
+koin = "4.2.0-beta3" # "4.0.1" #"4.0.0"
+koinCompose = "4.2.0-beta3" # "1.2.0-Beta4"
+koin-annotations = "4.2.0-beta3" #"2.1.0" #"2.0.0"
 
 dataframe = "1.0.0-Beta4"
 
-kotlinRpc = "0.10.1" #"0.5.1"
+kotlinRpc = "0.10.2" #"0.5.1"
 
 cache = "0.14.0"
 hoplite-version = "3.0.0.RC1" # "2.7.5" #"2.7.5"
@@ -84,6 +89,8 @@ compose-compiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "
 jetbrainsCompose = { id = "org.jetbrains.compose", version.ref = "compose-multiplatform" }
 hotReload = { id = "org.jetbrains.compose.hot-reload", version.ref= "hot-reload" }
 
+ktor = { id = "io.ktor.plugin", version.ref = "ktor" }
+
 #kotlin-rpc = { id = "org.jetbrains.kotlinx.rpc.plugin", version.ref = "kotlinRpc" }
 google-jib = { id = "com.google.cloud.tools.jib", version.ref = "google-jib" }
 #shadow = { id = "com.github.johnrengelman.shadow", version.ref = "shadow" }
@@ -99,9 +106,23 @@ buildconfig = { id = "com.github.gmazzo.buildconfig", version.ref = "buildconfig
 
 
 [libraries]
-compose-html = { module = "org.jetbrains.compose.html:html-core", version.ref = "compose-multiplatform"}
+#compose-html = { module = "org.jetbrains.compose.html:html-core", version.ref = "compose-multiplatform"}
 kotlinx-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "serialization"}
 kotlinx-serialization-json-jvm = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json-jvm", version.ref = "serialization"}
+kotlinx-datetime = { module = "org.jetbrains.kotlinx:kotlinx-datetime", version.ref = "datetime" }
+
+compose-runtime = { module = "org.jetbrains.compose.runtime:runtime", version.ref = "compose-base" }
+compose-foundation = { module = "org.jetbrains.compose.foundation:foundation", version.ref = "compose-base" }
+compose-material-icons-extended = { module = "org.jetbrains.compose.material:material-icons-extended", version = "1.7.3" }
+compose-ui = { module = "org.jetbrains.compose.ui:ui", version.ref = "compose-base" }
+compose-material3-adaptive-navigation-suite = { module = "org.jetbrains.compose.material3:material3-adaptive-navigation-suite", version.ref = "compose-material3-adaptive-navigation-suite" }
+compose-components-resources = { module = "org.jetbrains.compose.components:components-resources", version.ref = "compose-base" }
+androidx-lifecycle-runtime-compose = { module = "org.jetbrains.androidx.lifecycle:lifecycle-runtime-compose", version.ref = "androidx-lifecycle" }
+androidx-lifecycle-viewmodel-compose = { module = "org.jetbrains.androidx.lifecycle:lifecycle-viewmodel-compose", version.ref = "androidx-lifecycle" }
+androidx-navigation-compose = { module = "org.jetbrains.androidx.navigation:navigation-compose", version.ref = "androidx-navigation" }
+material3 = { module = "org.jetbrains.compose.material3:material3", version.ref = "material3" }
+
+koog = { module = "ai.koog:koog-agents", version.ref = "koog" }
 
 jackson-dataformat-yaml = { module = "com.fasterxml.jackson.dataformat:jackson-dataformat-yaml", version.ref = "jackson"}
 jackson-databind = { module = "com.fasterxml.jackson.core:jackson-databind", version.ref = "jackson" }
@@ -113,20 +134,36 @@ jackson-modules-java8 = { module = "com.fasterxml.jackson.module:jackson-modules
 activemq = { module = "org.apache.activemq:activemq-broker", version.ref = "activemq" }
 
 ktor-server-core = { module = "io.ktor:ktor-server-core", version.ref = "ktor" }
-ktor-server-netty = { module = "io.ktor:ktor-server-netty", version.ref = "ktor" }
 ktor-server-servlet = { module = "io.ktor:ktor-server-servlet", version.ref = "ktor" }
 ktor-server-cors = { module = "io.ktor:ktor-server-cors", version.ref = "ktor" }
 ktor-server-compression = { module = "io.ktor:ktor-server-compression", version.ref = "ktor" }
 ktor-server-content-negotiation = { module = "io.ktor:ktor-server-content-negotiation", version.ref = "ktor" }
 ktor-server-call-logging = { module = "io.ktor:ktor-server-call-logging", version.ref = "ktor" }
 ktor-server-websockets = { module = "io.ktor:ktor-server-websockets", version.ref = "ktor" }
+ktor-server-call-id = { module = "io.ktor:ktor-server-call-id", version.ref = "ktor" }
+ktor-server-openapi = { module = "io.ktor:ktor-server-openapi", version.ref = "ktor" }
+ktor-server-default-headers = { module = "io.ktor:ktor-server-default-headers", version.ref = "ktor" }
 ktor-server-caching-headers = { module = "io.ktor:ktor-server-caching-headers", version.ref = "ktor" }
+ktor-server-host-common = { module = "io.ktor:ktor-server-host-common", version.ref = "ktor" }
+ktor-server-sessions = { module = "io.ktor:ktor-server-sessions", version.ref = "ktor" }
+ktor-server-netty = { module = "io.ktor:ktor-server-netty", version.ref = "ktor" }
+netty-tcnative = { module = "io.netty:netty-tcnative", version.ref = "netty" }
+#netty-tcnative-boringssl-static = { module = "io.netty:netty-tcnative-boringssl-static::linux-x86_64", version.ref = "netty" }
+#2.0.61.Final", version.ref = "ktor" }
+#logback-classic = { module = "ch.qos.logback:logback-classic", version.ref = "logback" }
+#ktor-client-core = { module = "io.ktor:ktor-client-core", version.ref = "ktor" }
+ktor-server-test-host = { module = "io.ktor:ktor-server-test-host", version.ref = "ktor" }
+kotlin-test-junit = { module = "org.jetbrains.kotlin:kotlin-test-junit", version.ref = "kotlin" }
+
 ktor-serialization-kotlinx-json = { module = "io.ktor:ktor-serialization-kotlinx-json", version.ref = "ktor" }
 
 ktor-client-core = { module = "io.ktor:ktor-client-core", version.ref = "ktor"}
 ktor-client-auth = { module = "io.ktor:ktor-client-auth", version.ref = "ktor"}
 ktor-client-cio = { module = "io.ktor:ktor-client-cio", version.ref = "ktor"}
 ktor-client-content-negotiation = { module = "io.ktor:ktor-client-content-negotiation", version.ref = "ktor"}
+
+avro = { module = "com.github.avro-kotlin.avro4k:avro4k-core", version.ref = "avro"}
+snappy = { module = "org.xerial.snappy:snappy-java", version.ref = "snappy"}
 
 postgresql = { module = "org.postgresql:postgresql", version.ref = "postgresql" }
 
