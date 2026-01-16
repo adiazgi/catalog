@@ -11,6 +11,7 @@ ksp = "2.3.4" #2.2.21-RC-2.0.4" # "2.1.21-2.0.1" #""2.1.20-1.0.32" #"2.0.21-1.0.
 #"1.6.0" #"1.5.12"
 serialization = "1.10.0-RC" #"1.9.0"
 datetime = "0.7.1-0.6.x-compat" #"0.6.2"
+coroutines = "1.10.2"
 
 compose-multiplatform = "1.11.0-alpha01" # "1.10.0-beta01" #"1.6.3"
 compose-base = "1.10.0" # "1.9.0" # 1.9.0-beta03" #1.8.0" # ""1.8.0-beta01" # "1.8.0-rc01" # "1.7.4" #"1.6.3"
@@ -115,6 +116,7 @@ buildconfig = { id = "com.github.gmazzo.buildconfig", version.ref = "buildconfig
 kotlinx-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "serialization"}
 kotlinx-serialization-json-jvm = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json-jvm", version.ref = "serialization"}
 kotlinx-datetime = { module = "org.jetbrains.kotlinx:kotlinx-datetime", version.ref = "datetime" }
+kotlinx-coroutine-test = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-test", version.ref = "coroutines"}
 
 compose-runtime = { module = "org.jetbrains.compose.runtime:runtime", version.ref = "compose-base" }
 compose-foundation = { module = "org.jetbrains.compose.foundation:foundation", version.ref = "compose-base" }
@@ -170,7 +172,10 @@ ktor-client-content-negotiation = { module = "io.ktor:ktor-client-content-negoti
 avro = { module = "com.github.avro-kotlin.avro4k:avro4k-core", version.ref = "avro"}
 snappy = { module = "org.xerial.snappy:snappy-java", version.ref = "snappy"}
 
+h2database = { module = "com.h2database:h2", version.ref = "h2" }
 postgresql = { module = "org.postgresql:postgresql", version.ref = "postgresql" }
+container-postgresql = { module = "org.testcontainers:postgresql", version.ref = "container-postgresql" }
+oracle = { module = "com.oracle.ojdbc:ojdbc10", version.ref = "oracle" }
 
 stately-isoCollections = { module = "co.touchlab:stately-iso-collections", version.ref = "statelyIso" }
 
