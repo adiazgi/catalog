@@ -8,10 +8,10 @@ kotlin = "2.3.20-Beta1" # 2.3.0-Beta2" #""2.1.21"
 ksp = "2.3.4" #2.2.21-RC-2.0.4" # "2.1.21-2.0.1" #""2.1.20-1.0.32" #"2.0.21-1.0.26" #"1.9.23-1.0.20"
 #ksp = "2.0.0-RC2-1.0.20"
 compose-multiplatform = "1.11.0-alpha01" # "1.10.0-beta01" #"1.6.3"
+hot-reload = "1.1.0-alpha+182" # "1.0.0-rc01+169" # "1.0.0-beta04" #"1.0.0-alpha11"
 #compose = "1.4.3"
 #"1.6.0" #"1.5.12"
 serialization = "1.10.0-RC" #"1.9.0"
-
 
 #kotlin = "1.9.23"
 #ksp = "1.9.23-1.0.19"
@@ -77,11 +77,13 @@ buildconfig = "6.0.7"
 [plugins]
 detekt = { id = "io.gitlab.arturbosch.detekt", version.ref = "detekt"}
 kotlin = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin"}
+kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" } #, version = "1.8.0" }
 kotlinMultiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin"}
 kotlinSerialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
 ksp = { id = "com.google.devtools.ksp", version.ref = "ksp"  }
 compose-compiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
 jetbrainsCompose = { id = "org.jetbrains.compose", version.ref = "compose-multiplatform" }
+hotReload = { id = "org.jetbrains.compose.hot-reload", version.ref= "hot-reload" }
 
 #kotlin-rpc = { id = "org.jetbrains.kotlinx.rpc.plugin", version.ref = "kotlinRpc" }
 google-jib = { id = "com.google.cloud.tools.jib", version.ref = "google-jib" }
