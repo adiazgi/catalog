@@ -44,7 +44,12 @@ detekt = "1.23.8"
 exposed = "0.46.0"
 jacksonDataformat ="2.16.1"
 
+jsch = "2.27.7"
+oracle = "19.3.0.0"
 postgresql = "42.7.9"
+container-postgresql = "1.21.3"
+h2 = "2.4.240"
+
 statelyIso = "2.1.0"
 
 koin = "4.2.0-beta3" # "4.0.1" #"4.0.0"
@@ -213,6 +218,9 @@ log4j-core = { module = "org.apache.logging.log4j:log4j-core", version.ref = "lo
 #log4j2-impl = { module = "org.apache.logging.log4j:log4j-slf4j-impl", version.ref = "log4j2"}
 #log4j-slf4j = { module = "org.apache.logging.log4j:log4j-slf4j18-impl", version.ref = "log4j-slf4j"}
 log4j-slf4j = { module = "org.apache.logging.log4j:log4j-slf4j2-impl", version.ref = "log4j"}
+
+jsch = { module = "com.github.mwiede:jsch", version.ref = "jsch" }
+
 
 koin-test = { module = "io.insert-koin:koin-test" }
 koin-test-junit4 = { module = "io.insert-koin:koin-test-junit4" }
