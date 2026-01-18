@@ -19,9 +19,9 @@ androidx-lifecycle = "2.10.0-alpha07" # "2.9.4" # "2.9.2" # "2.8.4" # "2.8.0-rc0
 androidx-navigation = "2.9.1" # "2.9.0-alpha17" # Ok "2.8.0-alpha12" # KO "2.9.0-alpha15" # Ok "2.8.0-alpha12" # OK "2.8.0-alpha10" # OK "2.8.0-alpha08" # OK "2.7.0-alpha07" #"2.7.0-alpha06"
 compose-material3-adaptive-navigation-suite = "1.9.0"
 material3 = "1.11.0-alpha01" #"1.9.0-beta06"
-hot-reload = "1.1.0-alpha+186" # "1.0.0-rc01+169" # "1.0.0-beta04" #"1.0.0-alpha11"
+hot-reload = "1.1.0-alpha+187" # "1.0.0-rc01+169" # "1.0.0-beta04" #"1.0.0-alpha11"
 
-koog = "0.5.4" #"0.5.2.1.adg1" #"0.5.1"
+koog = "0.6.0" #"0.5.4" #"0.5.2.1.adg1" #"0.5.1"
 mcp = "0.8.1"
 
 # #############################################################
@@ -48,14 +48,14 @@ jacksonDataformat ="2.16.1"
 jsch = "2.27.7"
 oracle = "19.3.0.0"
 postgresql = "42.7.9"
-container-postgresql = "1.21.3"
+container-postgresql = "1.21.4"
 h2 = "2.4.240"
 
 statelyIso = "2.1.0"
 
 koin = "4.2.0-beta3" # "4.0.1" #"4.0.0"
 koinCompose = "4.2.0-beta3" # "1.2.0-Beta4"
-koin-annotations = "4.2.0-beta3" #"2.1.0" #"2.0.0"
+koin-annotations = "2.3.1" #"2.1.0" #"2.0.0"
 
 dataframe = "1.0.0-Beta4"
 
@@ -71,14 +71,14 @@ commons-compress = "1.28.0"
 
 markdown3 = "1.0.0-alpha03"
 markdown2 = "0.5.7"
-markdown1 = "0.38.1"
+markdown1 = "0.39.1"
 
 kotlinLogging = "7.0.14" #"6.0.3"
 slf4j = "2.0.17"
-logback = "1.5.24"
+logback = "1.5.25"
 log4j = "2.25.3"
 log4j-slf4j = "2.18.0"
-jupiter = "6.0.1" # "5.13.2" # "6.0.0" "5.9.2"
+jupiter = "6.0.2" # "5.13.2" # "6.0.0" "5.9.2"
 
 caupain = "1.8.0"
 versions = "0.53.0"
