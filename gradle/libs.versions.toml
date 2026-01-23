@@ -283,6 +283,9 @@ dataframe = ["dataframe", "dataframe-jdbc"]
 
 poi = [ "poi", "poi-ooxml", "commons-compress" ]
 
-logging = ["kotlin-logging-jvm", "slf4j", "log4j-api", "log4j-core", "log4j-slf4j"] #"logback-classic"]
+logging = ["kotlin-logging-jvm", "slf4j", "log4j-api", "log4j-core", "log4j-slf4j",
+    "jackson-dataformat-yaml"
+#    , "jackson-databind", "jackson-module-kotlin"
+] #"logback-classic"]
 
 hoplite = [ "hoplite-core", "hopelite-hocoon"]
