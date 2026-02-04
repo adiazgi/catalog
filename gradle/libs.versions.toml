@@ -2,10 +2,10 @@
 
 [versions]
 #kotlin = "1.8.22"
-kotlin = "2.3.20-Beta1" # 2.3.0-Beta2" #""2.1.21"
+kotlin = "2.4.0-mars-409" # "2.3.20-Beta1" # 2.3.0-Beta2" #""2.1.21"
 #kotlin = "2.0.0-RC2"
 #ksp = "1.8.22-1.0.11"
-ksp = "2.3.4" #2.2.21-RC-2.0.4" # "2.1.21-2.0.1" #""2.1.20-1.0.32" #"2.0.21-1.0.26" #"1.9.23-1.0.20"
+ksp = "2.3.5" #2.2.21-RC-2.0.4" # "2.1.21-2.0.1" #""2.1.20-1.0.32" #"2.0.21-1.0.26" #"1.9.23-1.0.20"
 #ksp = "2.0.0-RC2-1.0.20"
 #compose = "1.4.3"
 #"1.6.0" #"1.5.12"
@@ -19,9 +19,9 @@ androidx-lifecycle = "2.10.0-alpha08" # "2.9.4" # "2.9.2" # "2.8.4" # "2.8.0-rc0
 androidx-navigation = "2.9.1" # "2.9.0-alpha17" # Ok "2.8.0-alpha12" # KO "2.9.0-alpha15" # Ok "2.8.0-alpha12" # OK "2.8.0-alpha10" # OK "2.8.0-alpha08" # OK "2.7.0-alpha07" #"2.7.0-alpha06"
 compose-material3-adaptive-navigation-suite = "1.9.0"
 material3 = "1.11.0-alpha02" #"1.9.0-beta06"
-hot-reload = "1.1.0-alpha+188" # "1.0.0-rc01+169" # "1.0.0-beta04" #"1.0.0-alpha11"
+hot-reload = "1.1.0-alpha+189" # "1.0.0-rc01+169" # "1.0.0-beta04" #"1.0.0-alpha11"
 
-koog = "0.6.0" #"0.5.4" #"0.5.2.1.adg1" #"0.5.1"
+koog = "0.6.1" #"0.5.4" #"0.5.2.1.adg1" #"0.5.1"
 mcp = "0.8.1"
 
 # #############################################################
@@ -55,7 +55,7 @@ h2 = "2.4.240"
 # #############################################################
 kotlinLogging = "7.0.14" #"6.0.3"
 slf4j = "2.0.17"
-logback = "1.5.26"
+logback = "1.5.27"
 log4j = "2.25.3"
 log4j-slf4j = "2.18.0"
 jupiter = "6.0.2" # "5.13.2" # "6.0.0" "5.9.2"
@@ -95,7 +95,7 @@ commons-compress = "1.28.0"
 
 markdown3 = "1.0.0-alpha03"
 markdown2 = "0.5.7"
-markdown1 = "0.39.1"
+markdown1 = "0.39.2"
 
 
 
@@ -110,10 +110,9 @@ buildconfig = "6.0.7"
 
 
 [plugins]
-detekt = { id = "io.gitlab.arturbosch.detekt", version.ref = "detekt"}
 kotlin = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin"}
-kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" } #, version = "1.8.0" }
 kotlinMultiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin"}
+kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" } #, version = "1.8.0" }
 ksp = { id = "com.google.devtools.ksp", version.ref = "ksp"  }
 compose-compiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
 jetbrainsCompose = { id = "org.jetbrains.compose", version.ref = "compose-multiplatform" }
@@ -125,6 +124,8 @@ ktor = { id = "io.ktor.plugin", version.ref = "ktor" }
 google-jib = { id = "com.google.cloud.tools.jib", version.ref = "google-jib" }
 #shadow = { id = "com.github.johnrengelman.shadow", version.ref = "shadow" }
 shadow = { id = "com.gradleup.shadow", version.ref = "shadow" }
+
+detekt = { id = "io.gitlab.arturbosch.detekt", version.ref = "detekt"}
 
 caupain = { id = "com.deezer.caupain", version.ref = "caupain" }
 versions = { id = "com.github.ben-manes.versions", version.ref = "versions"}
