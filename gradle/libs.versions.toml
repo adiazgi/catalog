@@ -44,6 +44,7 @@ komapper = "3.1.0" #"1.17.0"
 
 azure-openai = "1.0.0-beta.16"
 
+opensavvy-vite="0.8.0"
 opensavvy-spine="0.9.0"
 
 
@@ -121,6 +122,7 @@ ksp = { id = "com.google.devtools.ksp", version.ref = "ksp"  }
 compose-compiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
 jetbrainsCompose = { id = "org.jetbrains.compose", version.ref = "compose-multiplatform" }
 hotReload = { id = "org.jetbrains.compose.hot-reload", version.ref= "hot-reload" }
+opensavvy-vite = { id = "dev.opensavvy.vite.kotlin", version.ref = "opensavvy-vite" }
 
 ktor = { id = "io.ktor.plugin", version.ref = "ktor" }
 
