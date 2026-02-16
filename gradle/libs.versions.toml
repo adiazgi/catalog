@@ -187,6 +187,8 @@ ktor-server-call-logging = { module = "io.ktor:ktor-server-call-logging", versio
 ktor-server-websockets = { module = "io.ktor:ktor-server-websockets", version.ref = "ktor" }
 ktor-server-call-id = { module = "io.ktor:ktor-server-call-id", version.ref = "ktor" }
 ktor-server-openapi = { module = "io.ktor:ktor-server-openapi", version.ref = "ktor" }
+ktor-server-openapi-routing = { module = "io.ktor:ktor-server-routing-openapi", version.ref = "ktor" }
+ktor-server-openapi-swagger = { module = "io.swagger.codegen.v3:swagger-codegen-generators", version.ref = "ktor" }
 ktor-server-default-headers = { module = "io.ktor:ktor-server-default-headers", version.ref = "ktor" }
 ktor-server-caching-headers = { module = "io.ktor:ktor-server-caching-headers", version.ref = "ktor" }
 ktor-server-host-common = { module = "io.ktor:ktor-server-host-common", version.ref = "ktor" }
@@ -285,6 +287,8 @@ ktor = [ "ktor-server-core", "ktor-server-netty", "ktor-server-servlet", "ktor-s
 
 ktor-client = [ "ktor-client-core", "ktor-client-cio", "ktor-client-content-negotiation", "ktor-client-auth",
      "ktor-serialization-kotlinx-json"]
+
+ktor-openapi = [ "ktor-server-openapi", "ktor-server-openapi-routing"] #, "ktor-server-openapi-swagger" ]
 
 
 dataframe = ["dataframe", "dataframe-jdbc"]

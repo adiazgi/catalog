@@ -38,6 +38,9 @@ publishing {
             from(components["versionCatalog"])
         }
 
+        create<MavenPublication>("gpr") {
+            from(components["versionCatalog"])
+        }
 //        create<MavenPublication>("my-local-maven") {
 //            groupId = project.group as String
 //            artifactId = project.name
@@ -72,6 +75,16 @@ publishing {
             url = uri(urlUploadRepositoryReleases)
             isAllowInsecureProtocol = true
         }
+
+        maven( "github") {
+            name = "GitHubPackages"
+            url = uri("https://maven.pkg.github.com/adiazgi/catalog")
+            credentials {
+                username = project.findProperty("gpr.user") as String? ?: System.getenv("USERNAME")
+                password = project.findProperty("gpr.key") as String? ?: System.getenv("TOKEN")
+            }
+        }
+
 
 //        maven("my-local-maven") {
 //            url = uri("${File.listRoots()[0]}var/maven-repo")
