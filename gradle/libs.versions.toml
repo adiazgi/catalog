@@ -22,7 +22,8 @@ material3 = "1.11.0-alpha02" #"1.9.0-beta06"
 hot-reload = "1.1.0-alpha+189" # "1.0.0-rc01+169" # "1.0.0-beta04" #"1.0.0-alpha11"
 
 koog = "0.6.1" #"0.5.4" #"0.5.2.1.adg1" #"0.5.1"
-mcp = "0.8.1"
+
+mcp-version = "0.8.1"
 
 # #############################################################
 koin = "4.2.0-beta4" # "4.0.1" #"4.0.0"
@@ -31,7 +32,6 @@ koin-annotations = "2.3.1" #"2.1.0" #"2.0.0"
 
 ktor= "3.4.0" # "3.0.3" #3.0.1-eap-75" #""3.0.3" #"3.0.1" #"2.3.10"
 netty = "2.0.75.Final"
-
 
 kotlinRpc = "0.10.2" #"0.5.1"
 
@@ -168,6 +168,8 @@ compose-ui-tooling-preview = { module = "org.jetbrains.compose.ui:ui-tooling-pre
 koog = { module = "ai.koog:koog-agents", version.ref = "koog" }
 azure-openai = { module = "com.azure:azure-ai-openai", version.ref="azure-openai"}
 
+mcp-client = { module = "io.modelcontextprotocol:kotlin-sdk-client", version.ref = "mcp-version" }
+mcp-server = { module = "io.modelcontextprotocol:kotlin-sdk-server", version.ref = "mcp-version" }
 
 jackson-dataformat-yaml = { module = "com.fasterxml.jackson.dataformat:jackson-dataformat-yaml", version.ref = "jackson"}
 jackson-databind = { module = "com.fasterxml.jackson.core:jackson-databind", version.ref = "jackson" }
