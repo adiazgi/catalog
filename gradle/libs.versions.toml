@@ -112,6 +112,7 @@ semver2="0.4.4"
 semver3="0.18.0"
 
 buildconfig = "6.0.7"
+ktlint = "12.1.0"
 
 
 [plugins]
@@ -140,6 +141,7 @@ semver = { id = "com.figure.gradle.semver", version.ref = "semver"}
 semver2 = { id = "com.fizzpod.git-semver", version.ref = "semver2"}
 semver3 = { id = "com.github.jmongard.git-semver-plugin", version.ref = "semver3"}
 buildconfig = { id = "com.github.gmazzo.buildconfig", version.ref = "buildconfig" }
+ktlint = { id = "org.jlleitschuh.gradle.ktlint", version.ref = "ktlint" }
 
 
 [libraries]
@@ -180,6 +182,7 @@ jackson-modules-java8 = { module = "com.fasterxml.jackson.module:jackson-modules
 
 activemq = { module = "org.apache.activemq:activemq-broker", version.ref = "activemq" }
 
+ktor-bom = { module = "io.ktor:ktor-bom", version.ref = "ktor" }
 ktor-server-core = { module = "io.ktor:ktor-server-core", version.ref = "ktor" }
 ktor-server-servlet = { module = "io.ktor:ktor-server-servlet", version.ref = "ktor" }
 ktor-server-cors = { module = "io.ktor:ktor-server-cors", version.ref = "ktor" }
@@ -195,7 +198,10 @@ ktor-server-default-headers = { module = "io.ktor:ktor-server-default-headers", 
 ktor-server-caching-headers = { module = "io.ktor:ktor-server-caching-headers", version.ref = "ktor" }
 ktor-server-host-common = { module = "io.ktor:ktor-server-host-common", version.ref = "ktor" }
 ktor-server-sessions = { module = "io.ktor:ktor-server-sessions", version.ref = "ktor" }
+ktor-server-auth = { module = "io.ktor:ktor-server-auth", version.ref = "ktor" }
+ktor-server-cio = { module = "io.ktor:ktor-server-cio", version.ref = "ktor" }
 ktor-server-netty = { module = "io.ktor:ktor-server-netty", version.ref = "ktor" }
+ktor-server-sse = { module = "io.ktor:ktor-server-sse", version.ref = "ktor" }
 netty-tcnative = { module = "io.netty:netty-tcnative", version.ref = "netty" }
 #netty-tcnative-boringssl-static = { module = "io.netty:netty-tcnative-boringssl-static::linux-x86_64", version.ref = "netty" }
 #2.0.61.Final", version.ref = "ktor" }
