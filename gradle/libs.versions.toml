@@ -2,7 +2,7 @@
 
 [versions]
 #kotlin = "1.8.22"
-kotlin = "2.3.20-Beta2" # "2.3.20-Beta1" # 2.3.0-Beta2" #""2.1.21"
+kotlin = "2.3.20-RC" # "2.3.20-Beta1" # 2.3.0-Beta2" #""2.1.21"
 #kotlin = "2.0.0-RC2"
 #ksp = "1.8.22-1.0.11"
 ksp = "2.3.6" #2.2.21-RC-2.0.4" # "2.1.21-2.0.1" #""2.1.20-1.0.32" #"2.0.21-1.0.26" #"1.9.23-1.0.20"
@@ -18,10 +18,10 @@ compose-base = "1.10.1" # "1.9.0" # 1.9.0-beta03" #1.8.0" # ""1.8.0-beta01" # "1
 androidx-lifecycle = "2.10.0-alpha08" # "2.9.4" # "2.9.2" # "2.8.4" # "2.8.0-rc03"
 androidx-navigation = "2.9.2" # "2.9.0-alpha17" # Ok "2.8.0-alpha12" # KO "2.9.0-alpha15" # Ok "2.8.0-alpha12" # OK "2.8.0-alpha10" # OK "2.8.0-alpha08" # OK "2.7.0-alpha07" #"2.7.0-alpha06"
 compose-material3-adaptive-navigation-suite = "1.9.0"
-material3 = "1.11.0-alpha02" #"1.9.0-beta06"
-hot-reload = "1.1.0-alpha+191" # "1.0.0-rc01+169" # "1.0.0-beta04" #"1.0.0-alpha11"
+material3 = "1.11.0-alpha03" #"1.9.0-beta06"
+hot-reload = "1.1.0-alpha+192" # "1.0.0-rc01+169" # "1.0.0-beta04" #"1.0.0-alpha11"
 
-koog = "0.6.2" #"0.5.4" #"0.5.2.1.adg1" #"0.5.1"
+koog = "0.6.3" #"0.5.4" #"0.5.2.1.adg1" #"0.5.1"
 
 mcp-version = "0.8.4"
 
@@ -71,7 +71,7 @@ snappy = "1.1.10.8"
 avro= "2.10.0"
 
 
-jackson = "2.21.0" # "2.18.0"
+jackson = "2.21.1" # "2.18.0"
 #"2.16.1"
 #"2.14.2"
 
@@ -80,9 +80,9 @@ jackson = "2.21.0" # "2.18.0"
 
 detekt = "1.23.8"
 exposed = "0.46.0"
-jacksonDataformat ="2.16.1"
+#jacksonDataformat ="2.16.1"
 
-jsch = "2.27.7"
+jsch = "2.27.8"
 
 
 statelyIso = "2.1.0"
@@ -91,7 +91,7 @@ statelyIso = "2.1.0"
 
 
 cache = "0.14.0"
-hoplite-version = "3.0.0.RC1" # "2.7.5" #"2.7.5"
+hoplite-version = "3.0.0.RC2" # "2.7.5" #"2.7.5"
 google-jib = "3.5.3" #"3.4.5"
 shadow = "9.3.1"
 hikari-version = "7.0.2"
