@@ -92,7 +92,7 @@ statelyIso = "2.1.0"
 
 cache = "0.14.0"
 hoplite-version = "3.0.0.RC2" # "2.7.5" #"2.7.5"
-google-jib = "3.5.3" #"3.4.5"
+google-jib = "3.5.2" #"3.4.5"
 shadow = "9.3.1"
 hikari-version = "7.0.2"
 poi = "5.5.1"
