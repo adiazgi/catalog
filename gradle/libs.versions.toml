@@ -5,7 +5,7 @@
 kotlin = "2.3.20" # "2.3.20-Beta1" # 2.3.0-Beta2" #""2.1.21"
 #kotlin = "2.0.0-RC2"
 #ksp = "1.8.22-1.0.11"
-agp = "9.0.1"
+agp = "9.1.0"
 ksp = "2.3.6" #2.2.21-RC-2.0.4" # "2.1.21-2.0.1" #""2.1.20-1.0.32" #"2.0.21-1.0.26" #"1.9.23-1.0.20"
 #ksp = "2.0.0-RC2-1.0.20"
 #compose = "1.4.3"
@@ -21,16 +21,17 @@ androidx-navigation = "2.9.2" # "2.9.7" # "2.9.0-alpha17" # Ok "2.8.0-alpha12" #
 compose-material3-adaptive-navigation-suite = "1.9.0" #"1.11.0-alpha04" #"1.10.0-alpha05" # "1.9.0"
 material3 = "1.11.0-alpha03" ## "1.11.0-alpha04" -> ERROR import object field 'org_jetbrains_skia_PathBuilder__1nGetFinalizer' is not a Function  #"1.9.0-beta06"d
 google-fonts = "1.11.0-alpha05"
-hot-reload = "1.1.0-beta+194" # "1.0.0-rc01+169" # "1.0.0-beta04" #"1.0.0-alpha11"
+hot-reload = "1.1.0-beta+195" # "1.0.0-rc01+169" # "1.0.0-beta04" #"1.0.0-alpha11"
 
 koog = "0.7.2" #"0.6.3" #"0.5.4" #"0.5.2.1.adg1" #"0.5.1"
 
 mcp-version = "0.9.0"
 
 # #############################################################
+metro = "0.11.4"
 koin = "4.2.0" # "4.0.1" #"4.0.0"
 koinCompose = "4.2.0" # "1.2.0-Beta4"
-koin-annotations = "2.3.1" #"2.1.0" #"2.0.0"
+koin-annotations = "4.2.0" #""2.3.1" #"2.1.0" #"2.0.0"
 
 ktor= "3.4.1" # "3.0.3" #3.0.1-eap-75" #""3.0.3" #"3.0.1" #"2.3.10"
 netty = "2.0.75.Final"
@@ -73,7 +74,7 @@ snappy = "1.1.10.8"
 avro= "2.10.0"
 
 
-jackson = "2.21.1" # "2.18.0"
+jackson = "2.21.2" # "2.18.0"
 #"2.16.1"
 #"2.14.2"
 
@@ -127,6 +128,7 @@ compose-compiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "
 jetbrainsCompose = { id = "org.jetbrains.compose", version.ref = "compose-multiplatform" }
 hotReload = { id = "org.jetbrains.compose.hot-reload", version.ref= "hot-reload" }
 opensavvy-vite = { id = "dev.opensavvy.vite.kotlin", version.ref = "opensavvy-vite" }
+metro = { id = "dev.zacsweers.metro", version.ref = "metro" }
 
 ktor = { id = "io.ktor.plugin", version.ref = "ktor" }
 
