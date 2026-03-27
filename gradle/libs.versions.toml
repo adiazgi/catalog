@@ -48,8 +48,8 @@ azure-openai = "1.0.0-beta.16"
 
 opensavvy-vite="0.8.3"
 opensavvy-spine="0.10.1"
-
-
+commonmark = "0.22.0"
+jetbrains-markdown = "0.1.45"
 
 # #############################################################
 
@@ -230,6 +230,8 @@ markdown3 = { module = "com.halilibo.compose-richtext:richtext-markdown", versio
 #markdown2 = { module = "com.github.jeziellago:compose-markdown", version.ref = "markdown2" }
 markdown = { module = "com.mikepenz:multiplatform-markdown-renderer-m3", version.ref = "markdown1" }
 markdown-coil3 = { module = "com.mikepenz:multiplatform-markdown-renderer-coil3", version.ref = "markdown1" }
+commonmark = { module = "org.commonmark:commonmark", version.ref = "commonmark" }
+jetbrains-markdown = { module = "org.jetbrains:markdown", version.ref = "jetbrains-markdown" }
 
 h2database = { module = "com.h2database:h2", version.ref = "h2" }
 postgresql = { module = "org.postgresql:postgresql", version.ref = "postgresql" }
