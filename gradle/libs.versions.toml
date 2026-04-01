@@ -5,7 +5,7 @@
 kotlin = "2.3.20" # "2.3.20-Beta1" # 2.3.0-Beta2" #""2.1.21"
 #kotlin = "2.0.0-RC2"
 #ksp = "1.8.22-1.0.11"
-agp = "9.0.1"
+agp = "9.1.0" #"9.0.1"
 ksp = "2.3.6" #2.2.21-RC-2.0.4" # "2.1.21-2.0.1" #""2.1.20-1.0.32" #"2.0.21-1.0.26" #"1.9.23-1.0.20"
 #ksp = "2.0.0-RC2-1.0.20"
 #compose = "1.4.3"
@@ -121,7 +121,7 @@ ktlint = "14.2.0"
 kotlin = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin"}
 kotlinMultiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin"}
 kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" } #, version = "1.8.0" }
-android-application = { id = "com.android.kotlin.multiplatform.library", version.ref = "agp" }
+android-library = { id = "com.android.kotlin.multiplatform.library", version.ref = "agp" }
 ksp = { id = "com.google.devtools.ksp", version.ref = "ksp"  }
 compose-compiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
 jetbrainsCompose = { id = "org.jetbrains.compose", version.ref = "compose-multiplatform" }
@@ -169,6 +169,7 @@ material3 = { module = "org.jetbrains.compose.material3:material3", version.ref 
 
 #compose-tooling-preview = { module = "org.jetbrains.compose.ui:ui-tooling-preview-desktop", version.ref = "compose" }
 compose-ui-tooling-preview = { module = "org.jetbrains.compose.ui:ui-tooling-preview", version.ref = "compose-multiplatform" }
+compose-ui-tooling = { module = "org.jetbrains.compose.ui:ui-tooling", version.ref = "compose-multiplatform" }
 #androidx-ui-tooling-preview-desktop = { group = "androidx.compose.ui", name = "ui-tooling-preview-desktop", version.ref = "uiToolingPreviewDesktop" }
 
 
