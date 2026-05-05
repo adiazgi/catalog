@@ -21,7 +21,7 @@ androidx-navigation = "2.9.2" # "2.9.7" # "2.9.0-alpha17" # Ok "2.8.0-alpha12" #
 compose-material3-adaptive-navigation-suite = "1.11.0-alpha07" # "1.10.0-alpha05" #"1.9.0" #"1.11.0-alpha04" #"1.10.0-alpha05" # "1.9.0"
 material3 = "1.11.0-alpha07" # "1.10.0-alpha05" #"1.11.0-alpha03" ## "1.11.0-alpha04" -> ERROR import object field 'org_jetbrains_skia_PathBuilder__1nGetFinalizer' is not a Function  #"1.9.0-beta06"d
 #google-fonts = "1.11.0-alpha05"
-hot-reload = "1.1.0-rc01" # "1.2.0-alpha+199" # "1.1.0-beta+194" # "1.0.0-rc01+169" # "1.0.0-beta04" #"1.0.0-alpha11"
+hot-reload = "1.1.0" # "1.2.0-alpha+199" # "1.1.0-beta+194" # "1.0.0-rc01+169" # "1.0.0-beta04" #"1.0.0-alpha11"
 
 koog = "0.8.0" #"0.6.3" #"0.5.4" #"0.5.2.1.adg1" #"0.5.1"
 
@@ -61,7 +61,7 @@ container-postgresql = "1.21.4"
 h2 = "2.4.240"
 
 # #############################################################
-kotlinLogging = "8.0.01" #"6.0.3"
+kotlinLogging = "8.0.02" #"6.0.3"
 slf4j = "2.0.17"
 logback = "1.5.32"
 log4j = "2.25.4"
@@ -84,7 +84,7 @@ jackson = "2.21.3" # "2.18.0"
 detekt = "1.23.8"
 #jacksonDataformat ="2.16.1"
 
-jsch = "2.28.1"
+jsch = "2.28.2"
 
 
 statelyIso = "2.1.0"
