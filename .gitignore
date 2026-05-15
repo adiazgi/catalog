@@ -1,14 +1,44 @@
-/build/
-**/build/
-/cdr-processor/build/
-/.idea/
-**/.idea/
-/.gradle/
+# Gradle
+.gradle/
 **/.gradle/
-/**/logs/
-/running.flag
-/.kotlin/
-/cdr-processor/src/test/resources/cdrs_micro_differents.csv
+build/
+**/build/
+!gradle/wrapper/gradle-wrapper.jar
+
+# Kotlin
+.kotlin/
+
+# IDE
+.idea/
+**/.idea/
+*.iml
+*.iws
+*.ipr
+.fleet/
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs / runtime
+**/logs/
+*.log
+running.flag
+
+# Local secrets / properties (never commit credentials)
+local.properties
+secrets.properties
+**/secrets.properties
+gradle-local.properties
+
+# Backup files
+*.bak
+*.orig
+*.rej
+gradle/libs.versions.toml.[0-9]*
+
+# Project-local data
 /notebooks/output/
 /notebooks/etc/*.xlsx
 /notebooks/output/*.xlsx
