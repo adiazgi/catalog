@@ -1,7 +1,6 @@
 plugins {
     `version-catalog`
     `maven-publish`
-    `ivy-publish`
     alias(libs.plugins.caupain)
     alias(libs.plugins.semver0)
 }
@@ -37,16 +36,6 @@ publishing {
         }
 
         create<MavenPublication>("gpr") {
-            from(components["versionCatalog"])
-        }
-
-        create<IvyPublication>("ivy") {
-            organisation = project.group as String
-            module = project.name
-            revision = project.version.toString()
-            descriptor.status = "milestone"
-            descriptor.branch = "production"
-
             from(components["versionCatalog"])
         }
     }
