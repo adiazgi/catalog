@@ -142,7 +142,7 @@ versions = { id = "com.github.ben-manes.versions", version.ref = "versions"}
 semver0 = { id = "com.javiersc.semver", version.ref = "semver0"}
 semver = { id = "com.figure.gradle.semver", version.ref = "semver"}
 semver2 = { id = "com.fizzpod.git-semver", version.ref = "semver2"}
-semver3 = { id = "com.github.jmongard.git-semver-plugin", version.ref = "semver3"}
+#semver3 = { id = "com.github.jmongard.git-semver-plugin", version.ref = "semver3"}
 buildconfig = { id = "com.github.gmazzo.buildconfig", version.ref = "buildconfig" }
 ktlint = { id = "org.jlleitschuh.gradle.ktlint", version.ref = "ktlint" }
 
