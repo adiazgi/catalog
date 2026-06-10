@@ -104,7 +104,7 @@ commons-compress = "1.28.0"
 markdown3 = "1.0.0-alpha04"
 markdown2 = "0.5.7"
 markdown1 = "0.41.0"
-backdrop = "0.0.1-alpha02"
+liquid-glass = "0.1.0"
 
 
 caupain = "1.9.1"
@@ -237,7 +237,7 @@ markdown = { module = "com.mikepenz:multiplatform-markdown-renderer-m3", version
 markdown-coil3 = { module = "com.mikepenz:multiplatform-markdown-renderer-coil3", version.ref = "markdown1" }
 commonmark = { module = "org.commonmark:commonmark", version.ref = "commonmark" }
 jetbrains-markdown = { module = "org.jetbrains:markdown", version.ref = "jetbrains-markdown" }
-backdrop = { module = "io.github.kashif-mehmood-km:backdrop", version.ref = "backdrop" }
+liquid-glass = { module = "io.github.nadeemiqbal:liquid-glass", version.ref = "liquid-glass" }
 
 h2database = { module = "com.h2database:h2", version.ref = "h2" }
 postgresql = { module = "org.postgresql:postgresql", version.ref = "postgresql" }
