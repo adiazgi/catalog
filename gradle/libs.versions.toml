@@ -2,11 +2,11 @@
 
 [versions]
 #kotlin = "1.8.22"
-kotlin = "2.4.0" # "2.3.20" # "2.3.20-Beta1" # 2.3.0-Beta2" #""2.1.21"
+kotlin = "2.4.10" # "2.3.20" # "2.3.20-Beta1" # 2.3.0-Beta2" #""2.1.21"
 #kotlin = "2.0.0-RC2"
 #ksp = "1.8.22-1.0.11"
 agp = "9.2.1" #"9.0.1"
-ksp = "2.3.9" #2.2.21-RC-2.0.4" # "2.1.21-2.0.1" #""2.1.20-1.0.32" #"2.0.21-1.0.26" #"1.9.23-1.0.20"
+ksp = "2.3.10" #2.2.21-RC-2.0.4" # "2.1.21-2.0.1" #""2.1.20-1.0.32" #"2.0.21-1.0.26" #"1.9.23-1.0.20"
 #ksp = "2.0.0-RC2-1.0.20"
 #compose = "1.4.3"
 #"1.6.0" #"1.5.12"
@@ -16,7 +16,7 @@ coroutines = "1.11.0"
 
 compose-multiplatform = "1.11.1" # "1.10.3"  #"1.10.3" # "1.11.0-alpha01" # "1.10.0-beta01" #"1.6.3"
 #compose-base = "1.11.0-beta03" # "1.10.3" # "1.10.2" # "1.9.0" # 1.9.0-beta03" #1.8.0" # ""1.8.0-beta01" # "1.8.0-rc01" # "1.7.4" #"1.6.3"
-androidx-lifecycle = "2.10.0" # "2.10.0-alpha08" # "2.10.0-beta01" #"2.10.0" # "2.9.4" # "2.9.2" # "2.8.4" # "2.8.0-rc03"
+androidx-lifecycle = "2.11.0" # "2.10.0-alpha08" # "2.10.0-beta01" #"2.10.0" # "2.9.4" # "2.9.2" # "2.8.4" # "2.8.0-rc03"
 androidx-navigation = "2.9.2" # "2.9.7" # "2.9.0-alpha17" # Ok "2.8.0-alpha12" # KO "2.9.0-alpha15" # Ok "2.8.0-alpha12" # OK "2.8.0-alpha10" # OK "2.8.0-alpha08" # OK "2.7.0-alpha07" #"2.7.0-alpha06"
 compose-material3-adaptive-navigation-suite = "1.11.0-alpha07" # "1.10.0-alpha05" #"1.9.0" #"1.11.0-alpha04" #"1.10.0-alpha05" # "1.9.0"
 material3 = "1.11.0-alpha07" # "1.10.0-alpha05" #"1.11.0-alpha03" ## "1.11.0-alpha04" -> ERROR import object field 'org_jetbrains_skia_PathBuilder__1nGetFinalizer' is not a Function  #"1.9.0-beta06"d
@@ -25,21 +25,21 @@ hot-reload = "1.1.1" # "1.2.0-alpha+199" # "1.1.0-beta+194" # "1.0.0-rc01+169" #
 
 koog = "0.8.0" #"0.6.3" #"0.5.4" #"0.5.2.1.adg1" #"0.5.1"
 
-mcp-version = "0.13.0"
+mcp-version = "0.14.0"
 
 # #############################################################
-koin = "4.2.1" # "4.0.1" #"4.0.0"
-koinCompose = "4.2.1" # "1.2.0-Beta4"
+koin = "4.2.2" # "4.0.1" #"4.0.0"
+koinCompose = "4.2.2" # "1.2.0-Beta4"
 koin-annotations = "2.3.1" #"2.1.0" #"2.0.0"
 
-ktor= "3.5.0" # "3.0.3" #3.0.1-eap-75" #""3.0.3" #"3.0.1" #"2.3.10"
-netty = "2.0.78.Final"
+ktor= "3.5.1" # "3.0.3" #3.0.1-eap-75" #""3.0.3" #"3.0.1" #"2.3.10"
+netty = "2.0.80.Final"
 
-kotlinRpc = "0.10.2" #"0.5.1"
+kotlinRpc = "0.10.3" #"0.5.1"
 
 dataframe = "1.0.0-Beta5"
 
-activemq = "6.2.6" #"5.18.3"
+activemq = "6.2.7" #"5.18.3"
 #"5.17.4"
 #exposed="0.36.2"
 komapper = "3.1.0" #"1.17.0"
@@ -47,35 +47,35 @@ komapper = "3.1.0" #"1.17.0"
 azure-openai = "1.0.0-beta.16"
 
 opensavvy-vite="0.9.0"
-opensavvy-spine="0.10.1"
-commonmark = "0.28.0"
-jetbrains-markdown = "0.7.5" # "0.1.45"
+opensavvy-spine="0.12.0"
+commonmark = "0.29.0"
+jetbrains-markdown = "0.7.7" # "0.1.45"
 
 # #############################################################
 
-exposed = "1.3.0"
+exposed = "1.3.1"
 
 oracle = "19.3.0.0"
-postgresql = "42.7.11"
+postgresql = "42.7.13"
 container-postgresql = "1.21.4"
 h2 = "2.4.240"
 
 # #############################################################
 kotlinLogging = "8.0.4" #"6.0.3"
 slf4j = "2.0.18"
-logback = "1.5.34"
-log4j = "2.26.0"
+logback = "1.5.38"
+log4j = "2.26.1"
 log4j-slf4j = "2.18.0"
-jupiter = "6.1.0" # "5.13.2" # "6.0.0" "5.9.2"
+jupiter = "6.1.2" # "5.13.2" # "6.0.0" "5.9.2"
 test-balloon = "1.6.9"
 
 # #############################################################
 
 snappy = "1.1.10.8"
-avro= "2.10.1"
+avro= "2.11.0"
 
 
-jackson = "2.22.0" # "2.18.0"
+jackson = "2.22.1" # "2.18.0"
 #"2.16.1"
 #"2.14.2"
 
@@ -85,7 +85,7 @@ jackson = "2.22.0" # "2.18.0"
 detekt = "1.23.8"
 #jacksonDataformat ="2.16.1"
 
-jsch = "2.28.2"
+jsch = "2.28.4"
 
 
 statelyIso = "2.1.0"
@@ -95,16 +95,16 @@ statelyIso = "2.1.0"
 
 cache = "0.14.0"
 hoplite-version = "3.0.0.RC3" # "2.7.5" #"2.7.5"
-google-jib = "3.5.3" #"3.4.5"
-shadow = "9.4.2"
-hikari-version = "7.0.2"
+google-jib = "3.5.4" #"3.4.5"
+shadow = "9.6.0"
+hikari-version = "7.1.0"
 poi = "5.5.1"
 commons-compress = "1.28.0"
 
-markdown3 = "1.0.0-alpha04"
+markdown3 = "1.0.0-alpha05"
 markdown2 = "0.5.7"
-markdown1 = "0.41.0"
-liquid-glass = "0.1.0"
+markdown1 = "0.43.0"
+liquid-glass = "0.2.3"
 liquid = "1.1.1"
 
 
@@ -112,7 +112,7 @@ caupain = "1.9.1"
 versions = "0.54.0"
 semver0="0.9.0"
 semver="2.0.4"
-semver2="0.6.0"
+semver2="0.6.1"
 #semver3="0.19.1"
 
 buildconfig = "6.0.10"
@@ -236,6 +236,7 @@ markdown3 = { module = "com.halilibo.compose-richtext:richtext-markdown", versio
 #markdown2 = { module = "com.github.jeziellago:compose-markdown", version.ref = "markdown2" }
 markdown = { module = "com.mikepenz:multiplatform-markdown-renderer-m3", version.ref = "markdown1" }
 markdown-coil3 = { module = "com.mikepenz:multiplatform-markdown-renderer-coil3", version.ref = "markdown1" }
+markdown-code = { module = "com.mikepenz:multiplatform-markdown-renderer-code", version.ref = "markdown1" }
 commonmark = { module = "org.commonmark:commonmark", version.ref = "commonmark" }
 jetbrains-markdown = { module = "org.jetbrains:markdown", version.ref = "jetbrains-markdown" }
 liquid-glass = { module = "io.github.nadeemiqbal:liquid-glass", version.ref = "liquid-glass" }
