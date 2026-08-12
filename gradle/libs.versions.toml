@@ -50,7 +50,7 @@ azure-openai = "1.0.0-beta.16"
 
 opensavvy-vite="0.9.1"
 opensavvy-spine="0.12.1"
-commonmark = "0.39.0"
+commonmark = "0.30.0"
 jetbrains-markdown = "0.7.8" # "0.1.45"
 
 # #############################################################
