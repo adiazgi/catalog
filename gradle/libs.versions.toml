@@ -120,6 +120,7 @@ semver2="0.6.2"
 
 buildconfig = "6.0.10"
 ktlint = "14.2.0"
+jacoco = "0.8.12"
 
 
 [plugins]
@@ -151,6 +152,7 @@ semver2 = { id = "com.fizzpod.git-semver", version.ref = "semver2"}
 #semver3 = { id = "com.github.jmongard.git-semver-plugin", version.ref = "semver3"}
 buildconfig = { id = "com.github.gmazzo.buildconfig", version.ref = "buildconfig" }
 ktlint = { id = "org.jlleitschuh.gradle.ktlint", version.ref = "ktlint" }
+jacoco = { id = "org.gradle.jacoco", version.ref = "jacoco" }
 
 
 [libraries]
