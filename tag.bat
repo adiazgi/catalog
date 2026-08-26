@@ -1,0 +1,1 @@
+.\gradlew pushSemverTag "-Psemver.scope=patch"
