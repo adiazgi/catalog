@@ -1,1 +1,1 @@
-rootProject.name = "my-gradle-catalog"
+rootProject.name = "catalog"
