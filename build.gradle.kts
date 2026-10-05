@@ -1,5 +1,6 @@
 import com.javiersc.semver.project.gradle.plugin.SemverExtension
 import com.javiersc.semver.project.gradle.plugin.tasks.PrintSemverTask
+import org.gradle.kotlin.dsl.provideDelegate
 
 plugins {
     `version-catalog`
@@ -17,8 +18,8 @@ semver {
 group = "es.ibermutua.telefonia"
 //version = project.ext.properties.getOrDefault("tag", "0.0.1") as String
 println("***version: ${project.version}")
-val tag = project.properties.getOrDefault("tag", "") as String
-if( tag.isNotEmpty()) version = tag
+val tag = project.findProperty("tag") as String?
+if( tag != null) version = tag
 println("***version: ${project.version}")
 
 catalog {
@@ -62,9 +63,9 @@ publishing {
         }
     }
 
-    val urlUploadRepositoryReleases: String by project
-    val artifactoryUsername: String by project
-    val artifactoryPassword: String by project
+    val urlUploadRepositoryReleases = project.property("urlUploadRepositoryReleases") as String
+    val artifactoryUsername = project.property("artifactoryUsername") as String
+    val artifactoryPassword = project.property("artifactoryPassword") as String
 
     repositories {
         maven {
