@@ -14,7 +14,7 @@ serialization = "1.12.0" #"1.9.0"
 datetime = "0.8.0" #-0.6.x-compat" #"0.6.2"
 coroutines = "1.11.0"
 
-compose-multiplatform = "1.13.0-beta1" # "1.12.1" # "1.11.1" # "1.10.3"  #"1.10.3" # "1.11.0-alpha01" # "1.10.0-beta01" #"1.6.3"
+compose-multiplatform = "1.13.0-beta01" # "1.12.1" # "1.11.1" # "1.10.3"  #"1.10.3" # "1.11.0-alpha01" # "1.10.0-beta01" #"1.6.3"
 #compose-base = "1.11.0-beta03" # "1.10.3" # "1.10.2" # "1.9.0" # 1.9.0-beta03" #1.8.0" # ""1.8.0-beta01" # "1.8.0-rc01" # "1.7.4" #"1.6.3"
 androidx-lifecycle = "2.11.0" # "2.10.0-alpha08" # "2.10.0-beta01" #"2.10.0" # "2.9.4" # "2.9.2" # "2.8.4" # "2.8.0-rc03"
 androidx-navigation = "2.10.0" # 2.10.2" # ""2.9.2" # "2.9.7" # "2.9.0-alpha17" # Ok "2.8.0-alpha12" # KO "2.9.0-alpha15" # Ok "2.8.0-alpha12" # OK "2.8.0-alpha10" # OK "2.8.0-alpha08" # OK "2.7.0-alpha07" #"2.7.0-alpha06"
