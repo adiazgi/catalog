@@ -240,6 +240,7 @@ ktor-server-netty = { module = "io.ktor:ktor-server-netty", version.ref = "ktor"
 ktor-server-sse = { module = "io.ktor:ktor-server-sse", version.ref = "ktor" }
 ktor-server-auth-jvm = { module = "io.ktor:ktor-server-auth-jvm", version.ref = "ktor" }
 ktor-server-auth-jwt-jvm = { module = "io.ktor:ktor-server-auth-jwt-jvm", version.ref = "ktor" }
+ktor-server-resources = { module = "io.ktor:ktor-server-resources", version.ref = "ktor" }
 
 netty-tcnative = { module = "io.netty:netty-tcnative", version.ref = "netty" }
 #netty-tcnative-boringssl-static = { module = "io.netty:netty-tcnative-boringssl-static::linux-x86_64", version.ref = "netty" }
