@@ -25,11 +25,13 @@ hot-reload = "1.2.0" # "1.2.0-alpha+199" # "1.1.0-beta+194" # "1.0.0-rc01+169" #
 compose-stability = "0.15.0"
 coil = "3.6.3"
 
+collections-immutable = "0.5.2"
+
 fastscroller = "0.3.2"
 abhijithShambu-scrollbar = "1.0.0"
 
 koog = "0.8.0" #"0.6.3" #"0.5.4" #"0.5.2.1.adg1" #"0.5.1"
-mcp-version = "0.15.0"
+mcp-version = "0.16.0"
 
 # #############################################################
 koin = "4.2.2" # "4.0.1" #"4.0.0"
@@ -196,6 +198,8 @@ coil-wasm-js = { module = "io.coil-kt.coil3:coil-wasm-js", version.ref = "coil" 
 #compose-tooling-preview = { module = "org.jetbrains.compose.ui:ui-tooling-preview-desktop", version.ref = "compose" }
 compose-ui-tooling-preview = { module = "org.jetbrains.compose.ui:ui-tooling-preview", version.ref = "compose-multiplatform" }
 compose-ui-tooling = { module = "org.jetbrains.compose.ui:ui-tooling", version.ref = "compose-multiplatform" }
+
+collections-immutable = { module = "org.jetbrains.kotlinx:kotlinx-collections-immutable", version.ref = "collections-immutable" }
 
 #fastscroller-core = { module = "io.github.oikvpqya.compose.fastscroller:fastscroller-core", version.ref = "fastscroller" }
 #fastscroller-material3 = { module = "io.github.oikvpqya.compose.fastscroller:fastscroller-material3", version.ref = "fastscroller" }
