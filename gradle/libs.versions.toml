@@ -45,7 +45,7 @@ kotlinRpc = "0.10.4" #"0.5.1"
 
 dataframe = "1.0.0-rc02"
 
-activemq = "6.3.2" #"5.18.3"
+activemq = "6.4.0" #"5.18.3"
 #"5.17.4"
 #exposed="0.36.2"
 komapper = "3.1.0" #"1.17.0"
