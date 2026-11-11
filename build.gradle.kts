@@ -104,8 +104,8 @@ publishing {
     }
 }
 
-//tasks.create( "x") {
-//    dependsOn("printSemver")
-//    val input = tasks.getByName<PrintSemverTask>( "printSemver").version.get()
-//    println( input)
-//}
+
+configurations.configureEach {
+    resolutionStrategy.cacheChangingModulesFor(40, TimeUnit.DAYS)
+    resolutionStrategy.cacheDynamicVersionsFor(40, TimeUnit.DAYS)
+}
