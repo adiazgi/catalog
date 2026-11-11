@@ -138,7 +138,7 @@ buildconfig = "6.1.2"
 ktlint = "14.2.0"
 jacoco = "0.8.12"
 
-my-plugins = "0.1.2"
+#my-plugins = "0.1.2"
 
 [plugins]
 kotlin = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin"}
@@ -171,7 +171,7 @@ semver0 = { id = "com.javiersc.semver", version.ref = "semver0"}
 buildconfig = { id = "com.github.gmazzo.buildconfig", version.ref = "buildconfig" }
 ktlint = { id = "org.jlleitschuh.gradle.ktlint", version.ref = "ktlint" }
 jacoco = { id = "org.gradle.jacoco", version.ref = "jacoco" }
-myplugins = { id = "es.ibermutua.telefonia.my-plugins", version.ref = "my-plugins" }
+#myplugins = { id = "es.ibermutua.telefonia.my-plugins", version.ref = "my-plugins" }
 
 [libraries]
 #compose-html = { module = "org.jetbrains.compose.html:html-core", version.ref = "compose-multiplatform"}
